@@ -1,4 +1,4 @@
-set /p "var=Enter ID: "
+set /p "var=Enter Commit Msg: "
 git add --all
 git diff-index --quiet HEAD || git commit -m "Automated commit on %var%"
 git push
